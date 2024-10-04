@@ -24,6 +24,9 @@ sdist/
 *.egg
 MANIFEST
 
+# Secrets
+secrets/
+
 # PyInstaller
 build/
 dist/
