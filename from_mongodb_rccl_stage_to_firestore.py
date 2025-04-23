@@ -196,6 +196,16 @@ def migrate_data():
             "paxId": "paxId"
         })
 
+        migrate_collection("Alvarado", "Alvarado", {
+            "productCode": "productCode",
+            "Duration": "Duration"
+        })
+
+        migrate_collection("Gate", "Gate", {
+            "gateNo": "gateNo",
+            "products": "products"
+        })
+
         print("Migration completed!")
     except Exception as e:
         print("Error migrating data:", e)
